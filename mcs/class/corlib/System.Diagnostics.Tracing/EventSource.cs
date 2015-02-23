@@ -56,10 +56,14 @@ namespace System.Diagnostics.Tracing
 		}
 
 		protected virtual void Dispose (bool disposing)
-		{			
+		{
 		}
 
 		protected virtual void OnEventCommand (EventCommandEventArgs command)
+		{
+		}
+
+		protected void WriteEvent (int eventId)
 		{
 		}
 
@@ -76,6 +80,42 @@ namespace System.Diagnostics.Tracing
 		}
 
 		protected void WriteEvent (int eventId, string arg1, int arg2, int arg3)
+		{
+		}
+
+		protected void WriteEvent (int eventId, params object[] args)
+		{
+		}
+
+		protected void WriteEvent (int eventId, int arg1)
+		{
+		}
+
+		protected void WriteEvent (int eventId, long arg1)
+		{
+		}
+
+		protected void WriteEvent (int eventId, int arg1, int arg2)
+		{
+		}
+
+		protected void WriteEvent (int eventId, long arg1, long arg2)
+		{
+		}
+
+		protected void WriteEvent (int eventId, string arg1, long arg2)
+		{
+		}
+
+		protected void WriteEvent (int eventId, string arg1, string arg2)
+		{
+		}
+
+		protected void WriteEvent (int eventId, long arg1, long arg2, long arg3)
+		{
+		}
+
+		protected void WriteEvent (int eventId, string arg1, string arg2, string arg3)
 		{
 		}
 	}
